@@ -1,5 +1,89 @@
 /* Phone styling */
 
+header {
+    width: 100%;
+    margin: auto;
+    display: block;
+    align-content: center;
+}
+
+header ::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header a img {
+    float: left;
+    margin: 0;
+    width: 27%;
+    align-self: center;
+}
+
+nav {
+    width: 73%;
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav li {
+    display: inline-block;
+    align-content: center;
+}
+
+nav a {
+    color: rgb(15, 105, 15);
+    text-decoration: none;
+}
+
+nav a :hover {
+    color: rgb(22, 56, 22);
+}
+
+nav a ::before {
+    display: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(22, 56, 22);
+
+    position: relative;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a :hover::before {
+    width: 100%;
+}
+
+.footer {
+    margin: auto;
+    align-content: center;
+    text-decoration: none;
+    
+}
+
+.footer ul {
+    list-style-type: none;
+    font-size: small;
+}
+
+.footer p {
+    font-size: x-small;
+    text-align: center;
+}
+
 /* Tablet styling */
+@media only screen and (min-width: 768px) {}
 
 /* Computer styling */
+@media only screen and (min-width: 992) {}
