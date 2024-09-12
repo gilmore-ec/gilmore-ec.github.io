@@ -70,15 +70,27 @@ body {
     }
 
     .footer {
-        margin: auto;
+        margin: 0;
         align-content: center;
         text-decoration: none;
+        font-size: large;
+        text-align: center;
         
+    }
+
+    .footer h3 {
+        text-align: center;
     }
 
     .footer ul {
         list-style-type: none;
         font-size: small;
+        display: contents;
+    }
+
+    .footer li {
+        padding: 1px;
+        text-align: center;
     }
 
     .footer li a {
@@ -89,13 +101,14 @@ body {
     .footer p {
         font-size: x-small;
         text-align: center;
+        margin: 6px;
     }
 
     .unsupported {
         display: none;
     }
 
-@media only screen and (max-width: 381px) {
+@media only screen and (max-width: 373px) {
     .supported {
         display: none;
     }
@@ -105,7 +118,14 @@ body {
 }
 
 /* Tablet styling */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .footer p {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
 
 /* Computer styling */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+}
