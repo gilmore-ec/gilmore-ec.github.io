@@ -1,0 +1,131 @@
+/* Phone styling */
+
+body {
+    background-color: black;
+
+    color: rgb(179, 179, 179);
+}
+
+    header {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-content: center;
+    }
+
+    header ::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    header a {
+        align-content: center;
+        width: 25%;
+        float: left;
+        padding: 1px;
+    }
+
+    header a img {
+        margin: 0;
+        width: 67px;
+    }
+
+    nav {
+        width: 75%;
+        float: right;
+        padding: 1px;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    nav li {
+        display: inline-block;
+        align-content: center;
+        padding: 2px;
+    }
+
+    nav a {
+        color: rgb(13, 94, 13);
+        text-decoration: none;
+    }
+
+    nav a :hover {
+        color: rgb(22, 56, 22);
+    }
+    
+
+    .unsupported {
+        display: none;
+    }
+
+    hr {
+        color: rgb(13, 94, 13);
+    }
+
+    .footer {
+        margin: 0;
+        align-content: center;
+        text-decoration: none;
+        font-size: large;
+        text-align: center;
+        
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+
+    .footer ul {
+        list-style-type: none;
+        font-size: small;
+        display: contents;
+    }
+
+    .footer li {
+        padding: 1px;
+        text-align: center;
+    }
+
+    .footer li a {
+        text-decoration: none;
+        color:rgb(15, 105, 15);
+    }
+
+    .footer p {
+        font-size: x-small;
+        text-align: center;
+        margin: 6px;
+    }
+
+    .unsupported {
+        display: none;
+    }
+
+@media only screen and (max-width: 373px) {
+    .supported {
+        display: none;
+    }
+    .unsupported {
+        display: contents;
+    }
+}
+
+/* Tablet styling */
+@media only screen and (min-width: 768px) {
+    .footer p {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
+/* Computer styling */
+@media only screen and (min-width: 992px) {
+
+}
