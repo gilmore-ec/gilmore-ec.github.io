@@ -1,89 +1,111 @@
 /* Phone styling */
 
-header {
-    width: 100%;
-    margin: auto;
-    display: block;
-    align-content: center;
+body {
+    background-color: black;
+
+    color: rgb(179, 179, 179);
 }
 
-header ::after {
-    content: '';
-    display: table;
-    clear: both;
-}
+    header {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-content: center;
+    }
 
-header a img {
-    float: left;
-    margin: 0;
-    width: 27%;
-    align-self: center;
-}
+    header ::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 
-nav {
-    width: 73%;
-    float: right;
-}
+    header a {
+        align-content: center;
+        width: 25%;
+        float: left;
+        padding: 1px;
+    }
 
-nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    justify-content: space-between;
-}
+    header a img {
+        margin: 0;
+        width: 67px;
+    }
 
-nav li {
-    display: inline-block;
-    align-content: center;
-}
+    nav {
+        width: 75%;
+        float: right;
+        padding: 1px;
+    }
 
-nav a {
-    color: rgb(15, 105, 15);
-    text-decoration: none;
-}
+    nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: space-between;
+    }
 
-nav a :hover {
-    color: rgb(22, 56, 22);
-}
+    nav li {
+        display: inline-block;
+        align-content: center;
+        padding: 2px;
+    }
 
-nav a ::before {
-    display: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: rgb(22, 56, 22);
+    nav a {
+        color: rgb(13, 94, 13);
+        text-decoration: none;
+    }
 
-    position: relative;
-    top: 0;
-    width: 0%;
-
-    transition: all ease-in-out 250ms;
-}
-
-nav a :hover::before {
-    width: 100%;
-}
-
-.footer {
-    margin: auto;
-    align-content: center;
-    text-decoration: none;
+    nav a :hover {
+        color: rgb(22, 56, 22);
+    }
     
-}
 
-.footer ul {
-    list-style-type: none;
-    font-size: small;
-}
+    .unsupported {
+        display: none;
+    }
 
-.footer p {
-    font-size: x-small;
-    text-align: center;
+    hr {
+        color: rgb(13, 94, 13);
+    }
+
+    .footer {
+        margin: auto;
+        align-content: center;
+        text-decoration: none;
+        
+    }
+
+    .footer ul {
+        list-style-type: none;
+        font-size: small;
+    }
+
+    .footer li a {
+        text-decoration: none;
+        color:rgb(15, 105, 15);
+    }
+
+    .footer p {
+        font-size: x-small;
+        text-align: center;
+    }
+
+    .unsupported {
+        display: none;
+    }
+
+@media only screen and (max-width: 381px) {
+    .supported {
+        display: none;
+    }
+    .unsupported {
+        display: contents;
+    }
 }
 
 /* Tablet styling */
 @media only screen and (min-width: 768px) {}
 
 /* Computer styling */
-@media only screen and (min-width: 992) {}
+@media only screen and (min-width: 992px) {}
