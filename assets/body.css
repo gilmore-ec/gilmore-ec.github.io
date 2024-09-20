@@ -21,5 +21,9 @@
     width: 65%;
     margin-left: auto;
     margin-right: auto;
+}
 
+.greeting h2 {
+    text-decoration: underline;
+    text-decoration-color: rgb(13, 94, 13);
 }
