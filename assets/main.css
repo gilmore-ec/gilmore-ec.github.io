@@ -68,25 +68,19 @@ body {
     }
 
     hr {
-        color: rgb(13, 94, 13);
+        color: rgb(22, 56, 22);
     }
 
     .footer {
         margin: 0;
         align-content: center;
         text-decoration: none;
-        font-size: large;
         text-align: center;
         
     }
 
-    .footer h3 {
-        text-align: center;
-    }
-
     .footer ul {
         list-style-type: none;
-        font-size: small;
         display: contents;
     }
 
@@ -101,9 +95,9 @@ body {
     }
 
     .footer p {
-        font-size: x-small;
+        font-size: xx-small;
         text-align: center;
-        margin: 6px;
+        margin-inline: 15%;
     }
 
     .unsupported {
