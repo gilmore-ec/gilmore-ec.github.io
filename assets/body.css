@@ -4,6 +4,13 @@
     max-width: 100%;
 }
 
+.about {
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+
 .biography {
     width: 35%;
     max-width: 175pt;
@@ -23,9 +30,31 @@
     margin-right: auto;
 }
 
+.greeting a {
+    color: rgb(13, 94, 13);
+    text-decoration: none;
+    margin: auto;
+    padding: 5%;
+
+}
+
 .greeting h2 {
     text-decoration: underline;
     text-decoration-color: rgb(13, 94, 13);
+}
+.skills {
+    width: 100%;
+    display: flex;
+    margin-inline: 0%;
+}
+
+.skills ul {
+    list-style: none;
+    width: 30%;
+}
+
+.skills ul li {
+    text-decoration: none;
 }
 
 /* Computer Styling */
