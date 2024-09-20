@@ -41,8 +41,8 @@ body {
 
     nav ul {
         display: flex;
-        margin: 0;
-        padding: 0;
+        margin: auto;
+        padding: 2%;
         list-style: none;
         justify-content: space-between;
     }
@@ -121,13 +121,24 @@ body {
 
 /* Tablet styling */
 @media only screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
     .footer p {
         margin-left: 30%;
         margin-right: 30%;
+    }
+    header a img {
+        width: 100px;
     }
 }
 
 /* Computer styling */
 @media only screen and (min-width: 992px) {
-
+    body {
+        font-size: 1.15em;
+    }
+    header a img {
+        width: 140px;
+    }
 }
