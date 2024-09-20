@@ -2,8 +2,10 @@
 
 body {
     background-color: black;
-
+    text-align: center;
     color: rgb(179, 179, 179);
+    font-family: 'Barlow';
+    font-size: 0.7em;
 }
 
     header {
