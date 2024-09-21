@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     max-width: 100%;
+    padding-top: 10%;
 }
 
 .about {
@@ -9,6 +10,7 @@
     width: 100%;
     padding: 0;
     margin: auto;
+    padding-top: 10%;
 }
 
 .biography {
@@ -38,28 +40,73 @@
 
 }
 
-.greeting h2 {
+h2 {
     text-decoration: underline;
     text-decoration-color: rgb(13, 94, 13);
 }
-.skills {
+
+.type ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.type li {
+    width: 25%;
+    display: inline-block;
+    margin: 0%;
+}
+
+.type b {
+    text-decoration: underline;
+    text-decoration-color: rgb(13, 94, 13);
+}
+
+.skillcontainer {
     width: 100%;
     display: flex;
     margin-inline: 0%;
+    height: fit-content;
 }
 
-.skills ul {
+.skill {
+    width: 24%;
+    height: 100%;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: auto;
+    margin-inline: 0;
+}
+
+.skill ul {
     list-style: none;
-    width: 30%;
+    padding: 0;
 }
 
-.skills ul li {
+.skill ul li {
     text-decoration: none;
 }
 
 /* Computer Styling */
 @media only screen and (min-width: 992px) {
-    .greeting h2 {
+    h2 {
         font-size: 2em;
+    }
+    .type ul {
+        width: 80%;
+        padding-left: auto;
+    }
+    .skillcontainer {
+        width: 80%;
+        padding-left: auto;
+    }
+    .main {
+        padding-top: 6%;
+    }
+
+    .about {
+        padding-top: 5%;
     }
 }
