@@ -2,15 +2,24 @@
 
 body {
     background-color: black;
-
+    text-align: center;
     color: rgb(179, 179, 179);
+    font-family: 'Barlow';
+    font-size: 0.7em;
 }
 
     header {
+        position: fixed;
+        background-color: black;
         width: 100%;
-        margin: 0;
+        margin: 0%;
+        padding: 0%;
         display: flex;
         align-content: center;
+        border-color: rgb(22, 56, 22);
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-style: solid;
     }
 
     header ::after {
@@ -39,8 +48,8 @@ body {
 
     nav ul {
         display: flex;
-        margin: 0;
-        padding: 0;
+        margin: auto;
+        padding: 2%;
         list-style: none;
         justify-content: space-between;
     }
@@ -66,25 +75,19 @@ body {
     }
 
     hr {
-        color: rgb(13, 94, 13);
+        color: rgb(22, 56, 22);
     }
 
     .footer {
         margin: 0;
         align-content: center;
         text-decoration: none;
-        font-size: large;
         text-align: center;
         
     }
 
-    .footer h3 {
-        text-align: center;
-    }
-
     .footer ul {
         list-style-type: none;
-        font-size: small;
         display: contents;
     }
 
@@ -99,9 +102,9 @@ body {
     }
 
     .footer p {
-        font-size: x-small;
+        font-size: xx-small;
         text-align: center;
-        margin: 6px;
+        margin-inline: 15%;
     }
 
     .unsupported {
@@ -119,13 +122,24 @@ body {
 
 /* Tablet styling */
 @media only screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
     .footer p {
         margin-left: 30%;
         margin-right: 30%;
+    }
+    header a img {
+        width: 100px;
     }
 }
 
 /* Computer styling */
 @media only screen and (min-width: 992px) {
-
+    body {
+        font-size: 1.15em;
+    }
+    header a img {
+        width: 140px;
+    }
 }
