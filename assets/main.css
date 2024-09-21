@@ -9,10 +9,17 @@ body {
 }
 
     header {
+        position: fixed;
+        background-color: black;
         width: 100%;
-        margin: 0;
+        margin: 0%;
+        padding: 0%;
         display: flex;
         align-content: center;
+        border-color: rgb(22, 56, 22);
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-style: solid;
     }
 
     header ::after {
