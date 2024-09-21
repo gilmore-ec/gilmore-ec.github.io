@@ -1,0 +1,145 @@
+/* Phone styling */
+
+body {
+    background-color: black;
+    text-align: center;
+    color: rgb(179, 179, 179);
+    font-family: 'Barlow';
+    font-size: 0.7em;
+}
+
+    header {
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        align-content: center;
+        border-color: rgb(22, 56, 22);
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-style: solid;
+    }
+
+    header ::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    header a {
+        align-content: center;
+        width: 25%;
+        float: left;
+        padding: 1px;
+    }
+
+    header a img {
+        margin: 0;
+        width: 67px;
+    }
+
+    nav {
+        width: 75%;
+        float: right;
+        padding: 1px;
+    }
+
+    nav ul {
+        display: flex;
+        margin: auto;
+        padding: 2%;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    nav li {
+        display: inline-block;
+        align-content: center;
+        padding: 2px;
+    }
+
+    nav a {
+        color: rgb(13, 94, 13);
+        text-decoration: none;
+    }
+
+    nav a :hover {
+        color: rgb(22, 56, 22);
+    }
+    
+
+    .unsupported {
+        display: none;
+    }
+
+    hr {
+        color: rgb(22, 56, 22);
+    }
+
+    .footer {
+        margin: 0;
+        align-content: center;
+        text-decoration: none;
+        text-align: center;
+        
+    }
+
+    .footer ul {
+        list-style-type: none;
+        display: contents;
+    }
+
+    .footer li {
+        padding: 1px;
+        text-align: center;
+    }
+
+    .footer li a {
+        text-decoration: none;
+        color:rgb(15, 105, 15);
+    }
+
+    .footer p {
+        font-size: xx-small;
+        text-align: center;
+        margin-inline: 15%;
+    }
+
+    .unsupported {
+        display: none;
+    }
+
+@media only screen and (max-width: 373px) {
+    .supported {
+        display: none;
+    }
+    .unsupported {
+        display: contents;
+    }
+}
+
+/* Tablet styling */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+    .footer p {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    header a img {
+        width: 100px;
+    }
+}
+
+/* Computer styling */
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 1.15em;
+    }
+    header a img {
+        width: 140px;
+    }
+}
