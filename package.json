@@ -1,0 +1,19 @@
+{
+  "name": "gilmore-ec.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio Website hosted through GitHub Pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilmore-ec/gilmore-ec.github.io.git"
+  },
+  "author": "Gilmore-EC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilmore-ec/gilmore-ec.github.io/issues"
+  },
+  "homepage": "https://github.com/gilmore-ec/gilmore-ec.github.io#readme"
+}
