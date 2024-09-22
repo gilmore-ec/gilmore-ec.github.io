@@ -19,6 +19,7 @@ Leveraged Technologies:
 • Amazon Web Services (AWS)
 • Node.js Package Manager (NPM)
 • Visual Studio Code
+
 Repository Structure:
 • Main branch: holds production code
 • Development branch: holds WIP and untested code.
