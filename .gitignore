@@ -16,3 +16,14 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
+src/assets/resume/Resume.pdf
+out/assets/projects/alt coming soon.png
+out/assets/projects/time calculator thumbnail.png
+out/assets/projects/website thumbnail.png
+src/assets/projects/alt coming soon.png
+src/assets/projects/time calculator thumbnail.png
+src/assets/projects/website thumbnail.png
+node_modules
+out/main.js
+src/main.js
+Scripts.txt
