@@ -4,7 +4,11 @@
   "description": "Portfolio Website hosted through GitHub Pages.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "minify-html": "html-minifier-terser src/index.html --collapse-whitespace --output=out/index.html && html-minifier-terser src/about.html --collapse-whitespace --output=out/about.html && html-minifier-terser src/projects.html --collapse-whitespace --output=out/projects.html && html-minifier-terser src/resume.html --collapse-whitespace --output=out/resume.html && html-minifier-terser src/contact.html --collapse-whitespace --output=out/contact.html",
+    "optimize-css": "postcss src/assets/main.css --use autoprefixer cssnano postcss-pxtorem --output out/assets/main.css --no-map && postcss src/assets/body.css --use autoprefixer cssnano postcss-pxtorem --output out/assets/body.css --no-map",
+    "transpile-js": "babel src/main.js -o out/main.js --presets=@babel/preset-env",
+    "minify-js": "uglifyjs out/main.js --compress -o out/main.js",
+    "build": "npm run minify-html && npm run optimize-css && npm run transpile-js && npm run minify-js"
   },
   "repository": {
     "type": "git",
