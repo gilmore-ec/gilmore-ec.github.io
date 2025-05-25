@@ -1,1 +1,216 @@
-<!DOCTYPE html><html lang="en"><head><title>Gilmore | Contact</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="assets/template/logo simple.png"><link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet"><link rel="stylesheet" href="assets/main.css"><link rel="stylesheet" href="assets/body.css"></head><body><div class="unsupported">Device not supported</div><div class="supported"><header><a href="index.html"><img src="assets/template/new logo.png" alt="logo" class="logo"></a><nav><ul><li><a href="index.html"><b>Home</b></a></li><li><a href="about.html"><b>About</b></a></li><li><a href="projects.html"><b>Projects</b></a></li><li><a href="resume.html"><b>Resume</b></a></li><li><a href="contact.html"><b>Contact</b></a></li></ul></nav></header><hr><!--Body--><div class="main"><p style="margin-left: auto; margin-right: auto">This page is currently under construction.<br><br></p></div><!--End Body--><hr><div class="footer"><br><ul><li><b>GitHub: </b><a href="https://www.github.com/gilmore-ec" target="_blank" class="links">Gilmore-EC</a></li><li><b>LinkedIn: </b><a href="https://www.linkedin.com/in/timothy-gilmore-08908420a" target="_blank" class="links">Timothy Gilmore</a></li></ul><p>I certify that the content included in this website is my own original work (or is cited accurately) and accurate to my knowledge. Work included which was conducted as part of a team or other group is indicated and attributed as such the other team members are named and a true description of my role in the project is included.</p></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Gilmore | Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/template/logo simple.png">
+  <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/body.css">
+  <link rel="stylesheet" href="assets/form.css" />
+</head>
+
+<body>
+  <div class="unsupported">Device not supported</div>
+  <div class="supported">
+    <header>
+      <a href="index.html"><img src="assets/template/new logo.png" alt="logo" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html"><b>Home</b></a></li>
+          <li><a href="about.html"><b>About</b></a></li>
+          <li><a href="projects.html"><b>Projects</b></a></li>
+          <li><a href="resume.html"><b>Resume</b></a></li>
+          <li><a href="contact.html"><b>Contact</b></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!--Body-->
+    <div class="main">
+      <section class="formcarry-container">
+        <div class="form-header">
+          <h2>Let's Connect</h2>
+          <p>I'd love to hear about your project or opportunity</p>
+        </div>
+
+        <form class="formcarryForm" action="https://formcarry.com/s/b-6Czv2ySkh" method="POST"
+          enctype="multipart/form-data">
+
+          <!-- Core fields - always visible -->
+          <div class="formcarry-block">
+            <label for="name">Your Name *</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required autocomplete="name" />
+          </div>
+
+          <div class="formcarry-block">
+            <label for="email">Email Address *</label>
+            <input type="email" name="email" id="email" placeholder="john@doe.com" required autocomplete="email" />
+          </div>
+
+          <div class="formcarry-block">
+            <label for="subject">What brings you here? *</label>
+            <select name="subject" id="subject" required>
+              <option value="" selected disabled>Choose the best option...</option>
+              <option value="full-time">Employment Opportunity</option>
+              <option value="freelance">Contract/Freelance Inquiry</option>
+              <option value="collaboration">Collaboration Proposal</option>
+              <option value="general">General Inquiry/Question</option>
+              <option value="feedback">Provide Feedback</option>
+            </select>
+          </div>
+
+          <!-- Conditional fields based on subject selection -->
+          <div class="conditional-fields" id="employment-fields" style="display: none;">
+            <div class="field-group">
+              <div class="formcarry-block">
+                <label for="company">Company *</label>
+                <input type="text" name="company" id="company" placeholder="Company name" autocomplete="organization"
+                  required />
+              </div>
+              <div class="formcarry-block">
+                <label for="location">Location Preference *</label>
+                <select name="location" id="location" required>
+                  <option value="" selected disabled>Select location type</option>
+                  <option value="remote">Remote</option>
+                  <option value="hybrid">Hybrid</option>
+                  <option value="onsite">On-site</option>
+                  <option value="flexible">Flexible</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-group">
+              <div class="formcarry-block">
+                <label for="position">Position/Role <span
+                    style="color: #999; font-weight: normal;">(optional)</span></label>
+                <input type="text" name="position" id="position" placeholder="e.g. Software Engineer II"
+                  autocomplete="organization-title" />
+              </div>
+              <div class="formcarry-block">
+                <label for="timeline">Start Timeline <span
+                    style="color: #999; font-weight: normal;">(optional)</span></label>
+                <select name="timeline" id="timeline">
+                  <option value="" selected disabled>Select timeline</option>
+                  <option value="immediate">Immediate (< 2 weeks)</option>
+                  <option value="short">Short-term (2-4 weeks)</option>
+                  <option value="medium">Medium-term (1-3 months)</option>
+                  <option value="long">Long-term (3+ months)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="conditional-fields" id="freelance-fields" style="display: none;">
+            <div class="field-group">
+              <div class="formcarry-block">
+                <label for="project-type">Project Type *</label>
+                <select name="project_type" id="project-type" required>
+                  <option value="" selected disabled>Select project type</option>
+                  <option value="mobile-app">Mobile App</option>
+                  <option value="api-backend">API/Backend</option>
+                  <option value="consulting">Technical Consulting</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="formcarry-block">
+                <label for="budget">Budget *</label>
+                <select name="budget" id="budget" required>
+                  <option value="" selected disabled>Select budget range</option>
+                  <option value="under-5k">Under $5,000</option>
+                  <option value="5k-15k">$5,000 - $15,000</option>
+                  <option value="15k-50k">$15,000 - $50,000</option>
+                  <option value="50k-plus">$50,000+</option>
+                  <option value="discuss">Let's discuss</option>
+                  <option value="unsure">Unsure</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-group">
+              <div class="formcarry-block">
+                <label for="project-timeline">Project Timeline <span
+                    style="color: #999; font-weight: normal;">(optional)</span></label>
+                <select name="project_timeline" id="project-timeline">
+                  <option value="" selected disabled>Select timeline</option>
+                  <option value="rush">Rush (< 1 month)</option>
+                  <option value="standard">Standard (1-3 months)</option>
+                  <option value="extended">Extended (3-6 months)</option>
+                  <option value="discuss">Let's discuss</option>
+                  <option value="unsure">Unsure</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="conditional-fields" id="collaboration-fields" style="display: none;">
+            <div class="field-group">
+              <div class="formcarry-block">
+                <label for="collaboration-type">Collaboration Type *</label>
+                <select name="collaboration_type" id="collaboration-type" required>
+                  <option value="" selected disabled>Select collaboration type</option>
+                  <option value="open-source">Open Source Project</option>
+                  <option value="joint-venture">Joint Venture</option>
+                  <option value="knowledge-share">Knowledge Sharing</option>
+                  <option value="mentorship">Mentorship</option>
+                  <option value="other-collab">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Optional phone field -->
+          <div class="formcarry-block">
+            <label for="phone">Phone Number <span style="color: #999; font-weight: normal;">(optional)</span></label>
+            <input type="tel" name="phone" id="phone" placeholder="(555) 123-4567" autocomplete="tel" />
+            <div class="field-hint">Only if you prefer a phone conversation</div>
+          </div>
+
+          <!-- Message field -->
+          <div class="formcarry-block">
+            <label for="message">Your Message *</label>
+            <textarea name="message" id="message" placeholder="Lets get into the details!" required></textarea>
+          </div>
+
+          <!-- Submit button -->
+          <div class="formcarry-block">
+            <button type="submit" id="submit-btn">
+              <span>Send Message</span>
+            </button>
+          </div>
+
+          <!-- Success/Error message -->
+          <div class="formcarry-message-block">
+            <div class="fc-message-icon"></div>
+            <div class="fc-message-content"></div>
+            <div class="fc-message-close"></div>
+          </div>
+
+        </form>
+      </section>
+    </div>
+    <!--End Body-->
+
+    <hr />
+
+    <div class="footer">
+      <br>
+      <ul>
+        <li><b>GitHub: </b><a href="https://www.github.com/gilmore-ec" target="_blank" class="links">Gilmore-EC</a></li>
+        <li><b>LinkedIn: </b><a href="https://www.linkedin.com/in/timothy-gilmore-08908420a" target="_blank"
+            class="links">Timothy Gilmore</a></li>
+      </ul>
+      <p>
+        I certify that the content included in this website is my own original work (or is cited accurately) and
+        accurate to my knowledge. Work included which was conducted as part of a team or other group is indicated and
+        attributed as such the other team members are named and a true description of my role in the project is
+        included.
+      </p>
+    </div>
+  </div>
+  <script src="form.js"></script>
+</body>
+
+</html>
