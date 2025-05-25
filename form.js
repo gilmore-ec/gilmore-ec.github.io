@@ -1,4 +1,3 @@
-
 // Progressive disclosure logic
 document.getElementById('subject').addEventListener('change', function () {
     const selectedValue = this.value;
@@ -11,6 +10,7 @@ document.getElementById('subject').addEventListener('change', function () {
     // Show relevant fields based on selection
     const messageField = document.getElementById('message');
     let targetFields = null;
+
     switch (selectedValue) {
         case 'full-time':
             targetFields = document.getElementById('employment-fields');
@@ -31,6 +31,7 @@ document.getElementById('subject').addEventListener('change', function () {
         'feedback': 'Which project caught your attention? What are your thoughts or suggestions?',
         'general': 'What questions do you have? How can I help you?'
     };
+
     if (targetFields) {
         targetFields.style.display = 'block';
         targetFields.classList.add('fade-in');
@@ -39,9 +40,50 @@ document.getElementById('subject').addEventListener('change', function () {
     if (placeholders[selectedValue]) {
         messageField.placeholder = placeholders[selectedValue];
     }
+
+    // Update required fields after changing visibility
+    updateRequiredFields();
 });
 
-// Form submission with enhanced UX
+// Call updateRequiredFields when the form is reset
+document.querySelector(".formcarryForm").addEventListener("reset", function () {
+    // Small delay to let the reset complete
+    setTimeout(updateRequiredFields, 10);
+});
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function () {
+    updateRequiredFields();
+});
+
+// Dynamic required field management for conditional form fields
+function updateRequiredFields() {
+    // Get all conditional field containers
+    const conditionalContainers = document.querySelectorAll('.conditional-fields');
+
+    conditionalContainers.forEach(container => {
+        const isVisible = container.style.display !== 'none';
+        const requiredFields = container.querySelectorAll('input[required], select[required], textarea[required]');
+
+        requiredFields.forEach(field => {
+            if (isVisible) {
+                // Container is visible, make fields required
+                field.required = true;
+                // Also remove any custom validity that might prevent submission
+                field.setCustomValidity('');
+            } else {
+                // Container is hidden, remove required attribute
+                field.required = false;
+                // Clear any validation errors
+                field.setCustomValidity('');
+                // Clear the field value to avoid sending hidden data
+                field.value = '';
+            }
+        });
+    });
+}
+
+// Form submission
 function registerNotificationBar(notifElement) {
     var block = notifElement;
     var content = block.querySelector('.fc-message-content');
