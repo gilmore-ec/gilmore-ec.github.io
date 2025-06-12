@@ -1,0 +1,1 @@
+function dropdownMenu(){var links=document.getElementById("mobile-links");"block"===links.style.display?links.style.display="none":links.style.display="block"}
